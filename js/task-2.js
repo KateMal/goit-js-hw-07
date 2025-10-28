@@ -31,4 +31,8 @@ images.forEach((image) => {
 
   console.log(image.url);
   console.log(imageElement);
+  imageElement.src = image.url;
+  imageElement.alt = image.alt;
+  imageElement.width = 320;
+  galleryEl.append(imageElement);
 });
